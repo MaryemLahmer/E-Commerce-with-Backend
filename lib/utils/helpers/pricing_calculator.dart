@@ -34,7 +34,7 @@ class MPricingCalculator{
   }
 
   //sum all cart values and return total amount
-  //static double calculteCartTotal(CartModel cart){
+  //static double calculate CartTotal(CartModel cart){
   //  return cart.items.map((e) => e.price).fold(0, (previousPrice, currentPrice) => previousPrice + (currentPrice ?? 0));
   //}
 }
