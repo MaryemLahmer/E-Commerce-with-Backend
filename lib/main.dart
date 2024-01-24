@@ -1,7 +1,7 @@
 import 'package:e_commerce_with_backend/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-import '../App.dart';
+import 'App.dart';
 
 void main() {
 

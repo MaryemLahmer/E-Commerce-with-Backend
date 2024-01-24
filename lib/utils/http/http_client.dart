@@ -26,7 +26,7 @@ static Future<Map<String,dynamic>> get(String endpoint) async{
   }
 
   // Helper Method to make a delete request
-  static Future<Map<String,dynamic>> delet(String endpoint) async {
+  static Future<Map<String,dynamic>> delete(String endpoint) async {
     final response= await http.delete(Uri.parse('$_baseUrl/$endpoint'),);
     return _handleResponse(response);
   }

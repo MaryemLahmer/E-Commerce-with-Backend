@@ -1,6 +1,4 @@
-import 'dart:js';
-
-import 'package:flutter/material.dart';;
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
@@ -42,7 +40,7 @@ class MHelperFunctions{
     });
   }
 
-  static void navigateToscreen(BuildContext context, Widget screen) {
+  static void navigateToScreen(BuildContext context, Widget screen) {
     Navigator.push(
     context,
     MaterialPageRoute(builder: (_) => screen)
@@ -65,7 +63,7 @@ class MHelperFunctions{
     return MediaQuery.of(Get.context!).size;
   }
 
-  static double screenheight(){
+  static double screenHeight(){
     return MediaQuery.of(Get.context!).size.height;
   }
 
