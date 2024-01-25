@@ -1,4 +1,3 @@
-import 'dart:html';
 
 ///This class contains all the App images in string formats
 class MImages{
@@ -13,8 +12,9 @@ class MImages{
 
   // -- Onboarding Images
   static const String onboardingImage1= "assets/images/on_boarding_images/cubes-woman-is-doing-mobile-shopping.gif";
-  static const String onboardingImage2= "assets/images/on_boarding_images/delivery-animated.gif";
-  static const String onboardingImage3= "assets/images/on_boarding_images/payment-method.gif";
+  static const String onboardingImage2= "assets/images/on_boarding_images/payment-method.gif";
+  static const String onboardingImage3= "assets/images/on_boarding_images/delivery-animated.gif";
+
 
 
 
