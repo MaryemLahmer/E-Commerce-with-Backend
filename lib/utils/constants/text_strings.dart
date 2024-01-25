@@ -15,7 +15,7 @@ class MTexts{
   static const String onBoardingSubTitle3 = "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
 
   //-- Home
-  static const String homeAppBarTitle = "Good day for SHopping";
+  static const String homeAppBarTitle = "Good day for Shopping";
   static const String homeAppBarSubTitle = "Marie Antoinette";
 
 
