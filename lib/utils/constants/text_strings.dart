@@ -39,6 +39,7 @@ class MTexts{
   static const String verificationCode  ="Verification Code";
   static const String resendEmail ="Resend E-mail";
   static const String resendEmailIn="Resend E-mail In";
+  static const String rememberMe="Remember Me";
 
   //-- Authentication Headings Text
   static const String loginTitle ="Welcome Back";
