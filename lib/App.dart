@@ -1,7 +1,8 @@
 import 'package:e_commerce_with_backend/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'features/authentication/screens/onboarding/onboarding.dart';
+import 'features/authentication/screens/onboarding_screens/onboarding.dart';
+import 'features/authentication/screens/sign_up/widgets/signup.dart';
 
 //--Use this Class to setup themes, initial Bindings, any animations and much more
 class App extends StatelessWidget {
@@ -13,7 +14,8 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: MAppTheme.lightTheme,
       darkTheme: MAppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+      //home: const OnBoardingScreen(),
+      home: const SignUpScreen(),
     );
   }
 }
