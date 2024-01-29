@@ -1,9 +1,9 @@
-import 'package:e_commerce_with_backend/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'App.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
 
   /// Tod: Add Widgets Binding
   /// Todo: Init local Storage
@@ -11,5 +11,8 @@ void main() {
   /// Todo: Initialize Firebase
   /// Todo: Initialize Authentication
   runApp(const App());
+}
+
+class FlutterNativeSplash {
 }
 
