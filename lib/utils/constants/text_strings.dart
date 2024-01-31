@@ -40,6 +40,8 @@ class MTexts{
   static const String resendEmail ="Resend E-mail";
   static const String resendEmailIn="Resend E-mail In";
   static const String rememberMe="Remember Me";
+  static const String done="Done";
+
 
   //-- Authentication Headings Text
   static const String loginTitle ="Welcome Back";
