@@ -18,7 +18,7 @@ class MImages{
   // -- Animations
   static const String productsIllustration="";
   static const String productSaleIllustration="";
-  static const String staticSuccessIllustration="";
+  static const String staticSuccessIllustration="assets/images/animations/account-created.gif";
   static const String deliveredPlaneIllustration="";
   static const String deliveredEmailIllustration="assets/images/animations/verify-mail.gif";
   static const String verifyIllustration="";
