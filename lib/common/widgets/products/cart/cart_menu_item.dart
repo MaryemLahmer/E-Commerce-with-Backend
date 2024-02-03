@@ -29,8 +29,8 @@ class CartCounterItem extends StatelessWidget {
             width: 18,
             height: 18,
             decoration: BoxDecoration(
-              color: MColors.black.withOpacity(0.5),
-              borderRadius: BorderRadius.circular(80),
+              color: MColors.black,
+              borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
               child: Text(
