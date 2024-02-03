@@ -1,4 +1,3 @@
-import 'package:e_commerce_with_backend/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
