@@ -14,20 +14,24 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PrimaryHeaderContainer(
-              child: Column(
-                children: [
+           /// PrimaryHeaderContainer(
+             /// child: Column(
+               /// children: [
                   /// -- AppBar
                   const HomeAppBar(),
+                  const SizedBox(height: MSizes.spaceBetweenSections,),
 
                   /// -- SearchBar
-                  Container(
-                    width: MDeviceUtils.getScreenWidth(context),
-                    padding: const EdgeInsets.all(MSizes.md),
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(MSizes.cardRadiusLg),
-                      border: Border.all(color: MColors.grey)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: MSizes.defaultSpace),
+                    child: Container(
+                      width: MDeviceUtils.getScreenWidth(context),
+                      padding: const EdgeInsets.all(MSizes.md),
+                      decoration: BoxDecoration(
+                        color: Colors.transparent,
+                        borderRadius: BorderRadius.circular(MSizes.cardRadiusLg),
+                        border: Border.all(color: MColors.grey)
+                      ),
                     ),
                   )
 
@@ -36,9 +40,9 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             )
-          ],
-        ),
-      ),
+    ///      ],
+  ///      ),
+     /// ),
     );
   }
 }
