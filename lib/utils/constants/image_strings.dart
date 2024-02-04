@@ -23,7 +23,16 @@ class MImages{
   static const String deliveredEmailIllustration="assets/images/animations/verify-mail.gif";
   static const String verifyIllustration="";
 
-
+  // -- Category Icons
+  static const String sportIcon ="assets/icons/sports.png";
+  static const String clothIcon="assets/icons/cloth.png";
+  static const String shoeIcon="assets/icons/shoes.png";
+  static const String cosmeticIcon="assets/icons/cosmetics.png";
+  static const String animalIcon="assets/icons/animal.png";
+  static const String toyIcon="assets/icons/toy.png";
+  static const String furnitureIcon="assets/icons/furniture.png";
+  static const String jewelryIcon="assets/icons/jewelry.png";
+  static const String electronicsIcons="assets/icons/electronics.png";
 
 
 
