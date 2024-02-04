@@ -34,6 +34,14 @@ class MImages{
   static const String jewelryIcon="assets/icons/categoryIcons/jewelry.png";
   static const String electronicsIcons="assets/icons/categoryIcons/electronics.png";
 
+  // -- Banners
+  static const String promoBanner1="assets/images/banners/banner1.jpg";
+  static const String promoBanner2="assets/images/banners/Gap Banner.jpg";
+  static const String promoBanner3="assets/images/banners/newArrivals.jpg";
+  static const String promoBanner4="assets/images/banners/Screenshot.jpg";
+  static const String promoBanner5="assets/images/banners/Zara New Collection.jpg";
+  static const String promoBanner6="assets/images/banners/newArrival.jpg";
+  static const String promoBanner7="assets/images/banners/newKnits.jpg";
 
 
 
