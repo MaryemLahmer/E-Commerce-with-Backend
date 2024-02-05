@@ -1,3 +1,4 @@
+import 'package:e_commerce_with_backend/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/promo_slider.dart';
@@ -55,15 +56,25 @@ class HomeScreen extends StatelessWidget {
             /// Body
             Padding(
                 padding: EdgeInsets.all(MSizes.defaultSpace),
-                child: PromoSlider(
-                  banners: [
-                    MImages.promoBanner1,
-                    MImages.promoBanner2,
-                    MImages.promoBanner3,
-                    MImages.promoBanner4,
-                    MImages.promoBanner5,
-                    MImages.promoBanner6,
-                    MImages.promoBanner7,
+                child: Column(
+                  children: [
+                    /// -- Promo Slider
+                    PromoSlider(
+                      banners: [
+                        MImages.promoBanner1,
+                        MImages.promoBanner2,
+                        MImages.promoBanner3,
+                        MImages.promoBanner4,
+                        MImages.promoBanner5,
+                        MImages.promoBanner6,
+                        MImages.promoBanner7,
+                      ],
+                    ),
+
+                    /// -- Popular Products
+                    ProductCardVertical(),
+                    SizedBox(height: MSizes.spaceBetweenSections,),
+
                   ],
                 ))
           ],
