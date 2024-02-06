@@ -26,7 +26,7 @@ class RoundedContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(radius!),
         border: showBorder ? Border.all(color: borderColor):null
       ),
-
+    child: child,
     );
   }
 }
