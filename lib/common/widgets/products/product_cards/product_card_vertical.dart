@@ -108,35 +108,43 @@ class ProductCardVertical extends StatelessWidget {
                       )
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      const ProductPriceText(price: '75',),
-
-                      /// Add to cart button
-                      Container(
-                        decoration: const BoxDecoration(
-                            color: MColors.dark,
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(MSizes.cardRadiusMd),
-                                bottomRight: Radius.circular(
-                                    MSizes.productImageRadius))),
-                        child: const SizedBox(
-                          width: MSizes.iconLg * 1.2,
-                          height: MSizes.iconLg * 0.9,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: MColors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
                 ],
               ),
+            ),
+
+            /// Adding Spacer here to keep the height of each box same in case 1 or 2 lines of heading
+            const Spacer(),
+
+            /// Price Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                const Padding(
+                  padding: EdgeInsets.only(left:MSizes.sm),
+                  child:  ProductPriceText(price: '75',),
+                ),
+
+                /// Add to cart button
+                Container(
+                  decoration: const BoxDecoration(
+                      color: MColors.dark,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(MSizes.cardRadiusMd),
+                          bottomRight: Radius.circular(
+                              MSizes.productImageRadius))),
+                  child: const SizedBox(
+                    width: MSizes.iconLg * 1.2,
+                    height: MSizes.iconLg * 0.9,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: MColors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
@@ -144,4 +152,3 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
-
