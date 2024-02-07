@@ -71,12 +71,24 @@ class HomeScreen extends StatelessWidget {
                         MImages.promoBanner7,
                       ],
                     ),
-
-                    /// -- Popular Products
                     const SizedBox(
                       height: MSizes.spaceBetweenSections,
                     ),
-                    MGridLayout(itemCount: 4,itemBuilder: (_,index)=>const ProductCardVertical(),),
+
+                    /// Heading
+                    SectionHeading(
+                      textHeading: 'Popular Products',
+                      onPressed: () {},
+                    ),
+                    const SizedBox(
+                      height: MSizes.spaceBetweenItems,
+                    ),
+
+                    /// -- Popular Products
+                    MGridLayout(
+                      itemCount: 4,
+                      itemBuilder: (_, index) => const ProductCardVertical(),
+                    ),
                   ],
                 ))
           ],
@@ -85,4 +97,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
