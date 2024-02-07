@@ -5,32 +5,35 @@ import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/device/device_utility.dart';
 import '../../../../utils/helpers/helper_functions.dart';
+
 class SearchContainer extends StatelessWidget {
   const SearchContainer({
     super.key,
     required this.text,
     this.icon = Iconsax.search_normal,
-    this.showBackground =true,
-    this.showBorder=true,
+    this.showBackground = true,
+    this.showBorder = true,
+    this.padding= const EdgeInsets.symmetric(horizontal: MSizes.defaultSpace),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     final isDark = MHelperFunctions.isDarkMode(context);
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: MSizes.defaultSpace),
+      padding: padding,
       child: Container(
         width: MDeviceUtils.getScreenWidth(context),
         padding: const EdgeInsets.all(MSizes.md),
         decoration: BoxDecoration(
           color: showBackground
               ? isDark
-              ? MColors.dark
-              : MColors.light
+                  ? MColors.dark
+                  : MColors.light
               : Colors.transparent,
           borderRadius: BorderRadius.circular(MSizes.cardRadiusLg),
           border: showBorder ? Border.all(color: MColors.grey) : null,
