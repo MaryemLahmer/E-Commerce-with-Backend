@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
+import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/enums.dart';
 import '../../../utils/constants/sizes.dart';
 import 'brand_title_text.dart';
+
 class BrandTitleWithVerifiedIcon extends StatelessWidget {
   const BrandTitleWithVerifiedIcon({
     super.key,
     required this.title,
-    required this.maxLines,
+    this.maxLines = 1,
     this.textColor,
-    this.iconColor=MColors.primary,
-    this.textAlign=TextAlign.center,
-    this.brandTextSizes=TextSizes.small,
+    this.iconColor = MColors.primary,
+    this.textAlign = TextAlign.center,
+    this.brandTextSizes = TextSizes.small,
   });
 
   final String title;
@@ -28,12 +29,11 @@ class BrandTitleWithVerifiedIcon extends StatelessWidget {
       children: [
         Flexible(
           child: BrandTitleText(
-              title,
-              color:textColor,
+              title: title,
+              color: textColor,
               maxLines: maxLines,
-              textAlign:textAlign,
-              brandTextSizes: brandTextSizes
-          ),
+              textAlign: textAlign,
+              brandTextSizes: brandTextSizes),
         ),
         const SizedBox(
           width: MSizes.xs,
@@ -47,5 +47,3 @@ class BrandTitleWithVerifiedIcon extends StatelessWidget {
     );
   }
 }
-
-
