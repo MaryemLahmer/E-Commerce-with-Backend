@@ -8,8 +8,9 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../icons/circular_icon.dart';
+import '../../texts/brand_title_text_with_verified_icon.dart';
 import '../../texts/product_title_text.dart';
-import '../product_price/product_price_text.dart';
+import '../../texts/product_price_text.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({super.key});
@@ -79,35 +80,18 @@ class ProductCardVertical extends StatelessWidget {
             ),
 
             /// --- Details
-            Padding(
-              padding: const EdgeInsets.only(left: MSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: MSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const ProductTitleText(
+                  ProductTitleText(
                     title: 'White Nike Air Shoes',
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: MSizes.spaceBetweenItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: MSizes.xs,
-                      ),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: MColors.primary,
-                        size: MSizes.iconXs,
-                      )
-                    ],
-                  ),
+                  BrandTitleWithVerifiedIcon(title: 'Nike',),
                 ],
               ),
             ),
@@ -121,8 +105,10 @@ class ProductCardVertical extends StatelessWidget {
               children: [
                 /// Price
                 const Padding(
-                  padding: EdgeInsets.only(left:MSizes.sm),
-                  child:  ProductPriceText(price: '75',),
+                  padding: EdgeInsets.only(left: MSizes.sm),
+                  child: ProductPriceText(
+                    price: '75',
+                  ),
                 ),
 
                 /// Add to cart button
@@ -131,8 +117,8 @@ class ProductCardVertical extends StatelessWidget {
                       color: MColors.dark,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(MSizes.cardRadiusMd),
-                          bottomRight: Radius.circular(
-                              MSizes.productImageRadius))),
+                          bottomRight:
+                              Radius.circular(MSizes.productImageRadius))),
                   child: const SizedBox(
                     width: MSizes.iconLg * 1.2,
                     height: MSizes.iconLg * 0.9,
@@ -152,3 +138,6 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+
+
