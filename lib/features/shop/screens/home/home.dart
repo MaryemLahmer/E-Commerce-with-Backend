@@ -6,6 +6,7 @@ import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
+import '../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/image_strings.dart';
 
@@ -14,11 +15,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PrimaryHeaderContainer(
+            const PrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// -- AppBar
@@ -55,11 +56,11 @@ class HomeScreen extends StatelessWidget {
 
             /// Body
             Padding(
-                padding: EdgeInsets.all(MSizes.defaultSpace),
+                padding: const EdgeInsets.all(MSizes.defaultSpace),
                 child: Column(
                   children: [
                     /// -- Promo Slider
-                    PromoSlider(
+                    const PromoSlider(
                       banners: [
                         MImages.promoBanner1,
                         MImages.promoBanner2,
@@ -72,9 +73,10 @@ class HomeScreen extends StatelessWidget {
                     ),
 
                     /// -- Popular Products
-                    ProductCardVertical(),
-                    SizedBox(height: MSizes.spaceBetweenSections,),
-
+                    const SizedBox(
+                      height: MSizes.spaceBetweenSections,
+                    ),
+                    MGridLayout(itemCount: 4,itemBuilder: (_,index)=>const ProductCardVertical(),),
                   ],
                 ))
           ],
@@ -83,3 +85,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
