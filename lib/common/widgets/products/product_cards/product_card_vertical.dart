@@ -5,11 +5,11 @@ import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:e_commerce_with_backend/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../icons/circular_icon.dart';
 import '../../texts/product_title_text.dart';
+import '../product_price/product_price_text.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({super.key});
@@ -20,7 +20,7 @@ class ProductCardVertical extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius and shadow
     return GestureDetector(
-      onTap: (){},
+      onTap: () {},
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -40,8 +40,7 @@ class ProductCardVertical extends StatelessWidget {
                   /// thumbnail image
                   const RoundedImage(
                     imageUrl: MImages.productImage23,
-                    applyImageRadius: true
-                    ,
+                    applyImageRadius: true,
                   ),
 
                   /// sale Tag
@@ -113,22 +112,19 @@ class ProductCardVertical extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       /// Price
-                      Text(
-                        '\$75.5',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineSmall,
-                      ),
+                      const ProductPriceText(price: '75',),
+
+                      /// Add to cart button
                       Container(
                         decoration: const BoxDecoration(
                             color: MColors.dark,
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(MSizes.cardRadiusMd),
-                                bottomRight:
-                                    Radius.circular(MSizes.productImageRadius))),
+                                bottomRight: Radius.circular(
+                                    MSizes.productImageRadius))),
                         child: const SizedBox(
-                          width: MSizes.iconLg *1.2,
-                          height: MSizes.iconLg *0.9,
+                          width: MSizes.iconLg * 1.2,
+                          height: MSizes.iconLg * 0.9,
                           child: Center(
                             child: Icon(
                               Iconsax.add,
@@ -148,3 +144,4 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
+
