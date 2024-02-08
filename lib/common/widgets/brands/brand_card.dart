@@ -26,7 +26,7 @@ class BrandCard extends StatelessWidget {
         showBorder: showBorder,
         backgroundColor: Colors.transparent,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             /// Icon
             Flexible(
