@@ -44,12 +44,13 @@ class HomeScreen extends StatelessWidget {
                         textHeading: 'Popular Categories',
                         textColor: Colors.white,
                       ),
+                      SizedBox(
+                        height: MSizes.spaceBetweenItems,
+                      ),
+                      HomeCategories()
                     ]),
                   ),
-                  SizedBox(
-                    height: MSizes.spaceBetweenItems,
-                  ),
-                  HomeCategories()
+                  SizedBox(height: MSizes.spaceBetweenSections,)
                 ],
               ),
             ),
