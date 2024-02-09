@@ -43,6 +43,9 @@ class MImages{
   static const String promoBanner6="assets/images/banners/newArrival.jpg";
   static const String promoBanner7="assets/images/banners/newKnits.jpg";
 
+  // -- User Profile
+  static const String user="assets/images/user/user.png";
+
   // -- Products
   static const String productImage1="assets/images/products/airpods.jpg";
   static const String productImage2="assets/images/products/BlackPufferJacker.jpg";
