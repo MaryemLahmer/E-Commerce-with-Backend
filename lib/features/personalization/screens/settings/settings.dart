@@ -1,8 +1,10 @@
 import 'package:e_commerce_with_backend/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce_with_backend/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:e_commerce_with_backend/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce_with_backend/features/personalization/screens/profile/profile.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../common/widgets/list_tiles/settings_menu_tile.dart';
 import '../../../../common/widgets/list_tiles/user_profile_tile.dart';
@@ -33,7 +35,9 @@ class SettingsScreen extends StatelessWidget {
                 ),
 
                 /// User Profile Card
-                const UserProfileTile(),
+                UserProfileTile(
+                  onPressed: () => Get.to(() => const ProfileScreen()),
+                ),
                 const SizedBox(
                   height: MSizes.spaceBetweenSections,
                 ),
@@ -136,12 +140,15 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   /// Logout Button
-                   const SizedBox(height:MSizes.spaceBetweenSections),
-                   SizedBox(
+                  const SizedBox(height: MSizes.spaceBetweenSections),
+                  SizedBox(
                     width: double.infinity,
-                    child: OutlinedButton(onPressed: () {}, child: const Text('Logout')),
+                    child: OutlinedButton(
+                        onPressed: () {}, child: const Text('Logout')),
                   ),
-                  const SizedBox(height: MSizes.spaceBetweenSections*2,)
+                  const SizedBox(
+                    height: MSizes.spaceBetweenSections * 2,
+                  )
                 ],
               ),
             )
