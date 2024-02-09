@@ -6,9 +6,9 @@ import '../../../utils/constants/image_strings.dart';
 import '../images/circular_image.dart';
 class UserProfileTile extends StatelessWidget {
   const UserProfileTile({
-    super.key,
+    super.key, required this.onPressed,
   });
-
+final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -37,7 +37,7 @@ class UserProfileTile extends StatelessWidget {
           Iconsax.edit,
           color: MColors.white,
         ),
-        onPressed: () {},
+        onPressed: onPressed,
       ),
     );
   }
