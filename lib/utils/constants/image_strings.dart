@@ -70,7 +70,7 @@ class MImages{
   static const String productImage21="assets/images/products/SamsungWhite.jpg";
   static const String productImage22="assets/images/products/SamsungYellow.jpg";
   static const String productImage23="assets/images/products/SemiLeatherJacket.jpg";
-  static const String productImage24="assets/images/products/Shoes.jpg";
+  static const String nikeShoes="assets/images/products/Shoes.jpg";
   static const String productImage25="assets/images/products/SweaterBlack.jpg";
   static const String productImage26="assets/images/products/SweaterBlue.jpg";
   static const String productImage27="assets/images/products/SweaterStayWeird.jpg";
