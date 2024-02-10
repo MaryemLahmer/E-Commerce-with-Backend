@@ -1,9 +1,11 @@
 import 'package:e_commerce_with_backend/common/styles/shadows.dart';
 import 'package:e_commerce_with_backend/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_commerce_with_backend/common/widgets/images/rounded_images.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/product_details/product_details.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:e_commerce_with_backend/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -21,7 +23,7 @@ class ProductCardVertical extends StatelessWidget {
 
     /// Container with side paddings, color, edges, radius and shadow
     return GestureDetector(
-      onTap: () {},
+      onTap: ()=> Get.to (()=> const ProductDetail() ),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -40,7 +42,7 @@ class ProductCardVertical extends StatelessWidget {
                 children: [
                   /// thumbnail image
                   const RoundedImage(
-                    imageUrl: MImages.productImage23,
+                    imageUrl: MImages.nikeShoes,
                     applyImageRadius: true,
                   ),
 
