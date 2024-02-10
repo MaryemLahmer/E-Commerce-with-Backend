@@ -1,3 +1,4 @@
+import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/rating_share_widget.dart';
@@ -30,7 +31,9 @@ class ProductDetail extends StatelessWidget {
                     /// Price, title, stock & brand
                     ProductMetaData(),
 
-                    /// Attribute
+                    /// Attributes
+                    ProductAttributes(),
+
                     /// Checkout Button
                     /// Description
                     /// Reviews
