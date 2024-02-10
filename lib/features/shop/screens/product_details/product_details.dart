@@ -1,4 +1,5 @@
 import 'package:e_commerce_with_backend/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/bottom_add_to_cart.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_details/widgets/product_meta_data.dart';
@@ -14,7 +15,7 @@ class ProductDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Botto,
+      bottomNavigationBar: const BottomAddToCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
