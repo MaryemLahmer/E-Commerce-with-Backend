@@ -86,12 +86,12 @@ class ProductMetaData extends StatelessWidget {
         ),
 
         /// Brand
-         const Row(children: [
-          CircularImage(image: MImages.shoeIcon`,
+          Row(children: [
+          CircularImage(image: MImages.shoeIcon,
           width: 32,
           height: 32,
           overlayColor: dark?MColors.white:MColors.black,),
-          BrandTitleWithVerifiedIcon(title: 'Nike',brandTextSizes: TextSizes.medium,),
+          const BrandTitleWithVerifiedIcon(title: 'Nike',brandTextSizes: TextSizes.medium,),
         ],)
       ],
     );
