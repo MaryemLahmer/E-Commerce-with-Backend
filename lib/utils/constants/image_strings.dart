@@ -43,6 +43,13 @@ class MImages{
   static const String promoBanner6="assets/images/banners/newArrival.jpg";
   static const String promoBanner7="assets/images/banners/newKnits.jpg";
 
+  // Product Reviews
+  static const String user1="assets/images/reviews/user1.png";
+  static const String user2="assets/images/reviews/user2.png";
+  static const String user3="assets/images/reviews/user3.png";
+  static const String user4="assets/images/reviews/user4.png";
+
+
   // -- User Profile
   static const String user="assets/images/user/user.png";
 
