@@ -1,10 +1,8 @@
 import 'package:e_commerce_with_backend/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/product_reviews/widgets/user_review_widget.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
-
 import '../../../../common/widgets/products/ratings/rating_indicator.dart';
 
 class ProductReviewsScreen extends StatelessWidget {
@@ -38,6 +36,10 @@ class ProductReviewsScreen extends StatelessWidget {
               const MRatingBarIndicator(rating: 4.8,),
               Text("12,628",style: Theme.of(context).textTheme.bodySmall,),
               const SizedBox(height: MSizes.spaceBetweenSections,),
+
+              /// User Reviews List
+              const UserReviewCard(),
+              const UserReviewCard(),
             ],
           ),
         ),
