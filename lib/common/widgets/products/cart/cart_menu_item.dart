@@ -1,5 +1,7 @@
+import 'package:e_commerce_with_backend/features/shop/screens/cart/cart.dart';
 import 'package:e_commerce_with_backend/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constants/colors.dart';
 
@@ -17,7 +19,7 @@ class CartCounterItem extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-            onPressed: onPressed,
+            onPressed: ()=> Get.to(()=> const CartScreen()),
             icon: Icon(
               Iconsax.shopping_bag,
               color: dark ? MColors.white : MColors.dark,
