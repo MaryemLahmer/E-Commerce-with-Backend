@@ -23,49 +23,75 @@ class AddNewAddressScreen extends StatelessWidget {
                   decoration: const InputDecoration(
                       prefixIcon: Icon(Iconsax.user), labelText: 'Name'),
                 ),
-                const SizedBox(height: MSizes.spaceBtwInputFields,),
+                const SizedBox(
+                  height: MSizes.spaceBtwInputFields,
+                ),
                 TextFormField(
                   decoration: const InputDecoration(
-                      prefixIcon: Icon(Iconsax.mobile), labelText: 'Phone Number'),
+                      prefixIcon: Icon(Iconsax.mobile),
+                      labelText: 'Phone Number'),
                 ),
-                const SizedBox(height: MSizes.spaceBtwInputFields,),
+                const SizedBox(
+                  height: MSizes.spaceBtwInputFields,
+                ),
                 Row(
                   children: [
                     Expanded(
                       child: TextFormField(
                         decoration: const InputDecoration(
-                            prefixIcon: Icon(Iconsax.building_31), labelText: 'Street'),
+                            prefixIcon: Icon(Iconsax.building_31),
+                            labelText: 'Street'),
                       ),
                     ),
-                    const SizedBox(width: MSizes.spaceBtwInputFields/2,),
+                    const SizedBox(
+                      width: MSizes.spaceBtwInputFields / 2,
+                    ),
                     Expanded(
                       child: TextFormField(
                         decoration: const InputDecoration(
-                            prefixIcon: Icon(Iconsax.code), labelText: 'Postal Code'),
+                            prefixIcon: Icon(Iconsax.code),
+                            labelText: 'Postal Code'),
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: MSizes.spaceBtwInputFields,),
+                const SizedBox(
+                  height: MSizes.spaceBtwInputFields,
+                ),
                 Row(
                   children: [
                     Expanded(
                       child: TextFormField(
                         decoration: const InputDecoration(
-                            prefixIcon: Icon(Iconsax.building_31), labelText: 'Street'),
+                            prefixIcon: Icon(Iconsax.building),
+                            labelText: 'City'),
                       ),
                     ),
-                    const SizedBox(width: MSizes.spaceBtwInputFields/2,),
+                    const SizedBox(
+                      width: MSizes.spaceBtwInputFields / 2,
+                    ),
                     Expanded(
                       child: TextFormField(
                         decoration: const InputDecoration(
-                            prefixIcon: Icon(Iconsax.code), labelText: 'Postal Code'),
+                            prefixIcon: Icon(Iconsax.activity),
+                            labelText: 'State'),
                       ),
                     ),
                   ],
                 ),
-
-
+                const SizedBox(
+                  height: MSizes.spaceBtwInputFields,
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(
+                      prefixIcon: Icon(Iconsax.global),
+                      labelText:'Country'),
+                ),
+                const SizedBox(height: MSizes.defaultSpace,),
+                 SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(onPressed: (){}, child: const Text('Save Changes')),
+                )
               ],
             ),
           ),
