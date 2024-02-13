@@ -24,6 +24,21 @@ class ProductQuantityWithAddRemove extends StatelessWidget {
           color: MHelperFunctions.isDarkMode(context)? MColors.white : MColors.black,
           backgroundColor: MHelperFunctions.isDarkMode(context)? MColors.darkerGrey : MColors.light,
         ),
+        const SizedBox(
+          width: MSizes.spaceBetweenItems,
+        ),
+        Text('2',style: Theme.of(context).textTheme.titleSmall),
+        const SizedBox(
+          width: MSizes.spaceBetweenItems,
+        ),
+        CircularIcon(
+          icon: Iconsax.add,
+          width: 32,
+          height: 32,
+          size: MSizes.md,
+          color: MColors.white ,
+          backgroundColor: MColors.primary.withOpacity(1),
+        ),
       ],
     );
   }
