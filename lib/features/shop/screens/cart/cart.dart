@@ -1,9 +1,12 @@
 import 'package:e_commerce_with_backend/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce_with_backend/common/widgets/texts/product_price_text.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/cart/widgets/cart_items.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/checkout/checkout.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/products/cart/add_remove_button.dart';
 import '../../../../common/widgets/products/cart/cart_item.dart';
+import 'package:get/get.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -18,44 +21,18 @@ class CartScreen extends StatelessWidget {
         ),
         showBackArrow: true,
       ),
-      body: Padding(
-          padding: const EdgeInsets.all(MSizes.defaultSpace),
-          child: ListView.separated(
-            shrinkWrap: true,
-            itemCount: 8,
-            separatorBuilder: (_, __) => const SizedBox(
-              height: MSizes.spaceBetweenSections,
-            ),
-            itemBuilder: (_, index) => const Column(
-              children: [
-                CartItem(),
-                SizedBox(
-                  height: MSizes.spaceBetweenItems,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        /// Extra Space
-                        SizedBox(
-                          width: 70,
-                        ),
+      body: const Padding(
+          padding: EdgeInsets.all(MSizes.defaultSpace),
 
-                        /// Add Remove Button
-                        ProductQuantityWithAddRemove(),
-                      ],
-                    ),
-                    ProductPriceText(price: '288'),
-                  ],
-                )
-              ],
-            ),
-          )),
+          /// Items in Cart
+          child: CartItems()),
+
+      /// Checkout Button
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(MSizes.defaultSpace),
-        child: ElevatedButton(onPressed: (){},child: const Text('Checkout: \$288.0'),),
+        child: ElevatedButton(onPressed: ()=>Get.to(()=>const CheckoutScreen()),child: const Text('Checkout: \$288.0'),),
       ),
     );
   }
 }
+
