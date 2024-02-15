@@ -3,10 +3,12 @@ import 'package:e_commerce_with_backend/common/widgets/custom_shapes/containers/
 import 'package:e_commerce_with_backend/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce_with_backend/common/widgets/products/cart/cart_menu_item.dart';
 import 'package:e_commerce_with_backend/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/brand/all_brands.dart';
 import 'package:e_commerce_with_backend/utils/constants/colors.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:e_commerce_with_backend/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
 import 'category_tab/category_tab.dart';
@@ -64,7 +66,7 @@ class StoreScreen extends StatelessWidget {
                         /// Featured Brands
                         SectionHeading(
                           textHeading: 'Featured Brands',
-                          onPressed: () {},
+                          onPressed: () => Get.to(()=> const AllBrands()),
                         ),
                         const SizedBox(
                           height: MSizes.spaceBetweenItems / 1.5,
