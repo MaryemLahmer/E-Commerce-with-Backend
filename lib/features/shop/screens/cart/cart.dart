@@ -1,11 +1,8 @@
 import 'package:e_commerce_with_backend/common/widgets/appbar/appbar.dart';
-import 'package:e_commerce_with_backend/common/widgets/texts/product_price_text.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/cart/widgets/cart_items.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/checkout/checkout.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import '../../../../common/widgets/products/cart/add_remove_button.dart';
-import '../../../../common/widgets/products/cart/cart_item.dart';
 import 'package:get/get.dart';
 
 class CartScreen extends StatelessWidget {
