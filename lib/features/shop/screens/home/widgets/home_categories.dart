@@ -1,6 +1,10 @@
+import 'package:e_commerce_with_backend/features/shop/screens/sub_category/sub_category.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../../common/widgets/images/image_text.dart';
 import '../../../../../utils/constants/image_strings.dart';
+import 'package:get/get.dart';
+
 class HomeCategories extends StatelessWidget {
   const HomeCategories({
     super.key,
@@ -18,7 +22,7 @@ class HomeCategories extends StatelessWidget {
           return VerticalImageText(
             image: MImages.shoeIcon,
             title: 'Shoes',
-            onTap: () {},
+            onTap: ()=> Get.to(()=> const SubCategoryScreen()),
           );
         },
       ),
