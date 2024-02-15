@@ -20,6 +20,11 @@ class BillingAddressSection extends StatelessWidget {
           'Saint Clement, Bardo 2000',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
+        const SizedBox(
+          height: MSizes.spaceBetweenItems/2,
+        ),
+
+        /// Phone Number
         const Row(
           children: [
             Icon(
@@ -33,9 +38,12 @@ class BillingAddressSection extends StatelessWidget {
             Text('(+216) 22 218 624'),
           ],
         ),
+
         const SizedBox(
-          width: MSizes.spaceBetweenItems,
+          height: MSizes.spaceBetweenItems/2,
         ),
+
+        /// Location
         Row(
           children: [
             const Icon(
