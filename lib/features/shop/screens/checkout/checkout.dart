@@ -6,7 +6,6 @@ import 'package:e_commerce_with_backend/features/shop/screens/checkout/widgets/b
 import 'package:e_commerce_with_backend/features/shop/screens/checkout/widgets/billing_payment_section.dart';
 import 'package:e_commerce_with_backend/navigation_menu.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/products/cart/coupon_widget.dart';
 import '../../../../utils/constants/colors.dart';
