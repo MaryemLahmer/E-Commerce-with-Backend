@@ -1,9 +1,11 @@
 import 'package:e_commerce_with_backend/common/widgets/products/product_cards/product_card_vertical.dart';
+import 'package:e_commerce_with_backend/features/shop/screens/all_products/all_products.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce_with_backend/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
 import '../../../../common/widgets/layouts/grid_layout.dart';
@@ -19,38 +21,40 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const PrimaryHeaderContainer(
+             PrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// -- AppBar
-                  HomeAppBar(),
-                  SizedBox(
+                  const HomeAppBar(),
+                  const SizedBox(
                     height: MSizes.spaceBetweenSections,
                   ),
 
                   /// -- SearchBar
-                  SearchContainer(
+                  const SearchContainer(
                     text: 'Search in Store',
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: MSizes.spaceBetweenSections,
                   ),
 
                   /// -- Categories
                   Padding(
-                    padding: EdgeInsets.only(left: MSizes.defaultSpace),
+                    padding: const EdgeInsets.only(left: MSizes.defaultSpace),
                     child: Column(children: [
                       SectionHeading(
                         textHeading: 'Popular Categories',
                         textColor: Colors.white,
+                        showActionButton: true,
+                        onPressed: ()=>Get.to(()=>const AllProducts()),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: MSizes.spaceBetweenItems,
                       ),
-                      HomeCategories()
+                      const HomeCategories()
                     ]),
                   ),
-                  SizedBox(height: MSizes.spaceBetweenSections,)
+                  const SizedBox(height: MSizes.spaceBetweenSections,)
                 ],
               ),
             ),
