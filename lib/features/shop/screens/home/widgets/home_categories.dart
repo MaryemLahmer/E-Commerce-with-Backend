@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../../common/widgets/images/image_text.dart';
 import '../../../../../utils/constants/image_strings.dart';
-import 'package:get/get.dart';
 
 class HomeCategories extends StatelessWidget {
   const HomeCategories({
