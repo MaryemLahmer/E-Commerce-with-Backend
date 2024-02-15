@@ -1,5 +1,4 @@
 import 'package:e_commerce_with_backend/common/widgets/appbar/appbar.dart';
-import 'package:e_commerce_with_backend/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_commerce_with_backend/features/personalization/screens/address/widgets/single_address.dart';
 import 'package:e_commerce_with_backend/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
