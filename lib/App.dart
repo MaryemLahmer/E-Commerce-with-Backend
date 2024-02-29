@@ -1,3 +1,4 @@
+import 'package:e_commerce_with_backend/utils/constants/colors.dart';
 import 'package:e_commerce_with_backend/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,7 +14,9 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: MAppTheme.lightTheme,
       darkTheme: MAppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+        ///home: const OnBoardingScreen(),
+        ///show loader or circular progress indicator meanwhile authentication repository is deciding to show relevant screen
+      home:const Scaffold(backgroundColor: MColors.primary,body: Center(child: CircularProgressIndicator(color: Colors.white,),),)
 
     );
   }
