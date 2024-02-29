@@ -1,4 +1,3 @@
-import 'package:e_commerce_with_backend/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:e_commerce_with_backend/features/authentication/screens/onboarding_screens/widgets/onboarding_dot_navigation.dart';
 import 'package:e_commerce_with_backend/features/authentication/screens/onboarding_screens/widgets/onboarding_next_button.dart';
 import 'package:e_commerce_with_backend/features/authentication/screens/onboarding_screens/widgets/onboarding_page.dart';
@@ -7,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/text_strings.dart';
+import '../../controllers/onboarding/onboarding_controller.dart';
 
 
 class OnBoardingScreen extends StatelessWidget {
